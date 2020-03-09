@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css?ver=1.5522">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Krona+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Candal&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo|Hammersmith+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
+</head>
+
+<body onselectstart="return false">
+    <header class="head">
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
+            <center>
+                <button class="navbutton">HOME</button>
+                <button class="navbutton">PRODUCTS</button>
+                <button class="navbutton">SERVICE</button>
+                <button class="navbutton">TEAM</button>
+            </center>
+            <button onclick="closeLeftMenu()" class="navbuttonx">&times;</button>
+            <a style="text-decoration: none; color: mediumvioletred;" href="http://siddiqei.rf.gd/?i=2">
+                <h6> © 2020 Fakhrul Alam Siddiqei Antor
+            </a>
+        </div>
+        <button class="menub" onclick="openLeftMenu()">&#9776;</button>
+
+        <div class="topbar">
+            
+            <div class="title">
+                <h1>WAi</h1>
+            </div>
+            <div class="menu">
+                <button class="home">HOME</button>
+                <button class="product">PRODUCTS</button>
+                <button class="service">SERVICE</button>
+                <button class="team">TEAM</button>
+            </div>
+
+        </div>
+        <div class="subhead">
+             <h1>Have your personal website or application easily in a week.</h1>
+        </div>
+        <div class="buttons">  
+           <div><button>ORDER PROJECT &#8594;</button></div> 
+            <div><button>BUY PROJECT &#8594;</button></div>
+        </div>
+        <div class="job">
+            <div class="jobtitle">
+                <h1>Our services</h1>
+            </div>
+            <div class="jobs">
+ 
+            </div>
+        </div> 
+    </header>
+    <mainbody class="mainbody">
+        <div class="tom">
+asfasfasfasffasasf
+        </div>
+    </mainbody>
+    <script>
+        function openLeftMenu() {
+            document.getElementById("leftMenu").style.display = "block";
+            document.getElementById("leftMenu").style.width = "70%";
+            document.getElementById("leftMenu").style.textAlign = "center";
+            document.getElementById("leftMenu").style.paddingTop = "100px";
+
+
+        }
+
+        function closeLeftMenu() {
+            document.getElementById("leftMenu").style.display = "none";
+            document.getElementById("leftMenu").style.transition = "0.7";
+        }
+
+        function openRightMenu() {
+            document.getElementById("rightMenu").style.display = "block";
+        }
+
+        function closeRightMenu() {
+            document.getElementById("rightMenu").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

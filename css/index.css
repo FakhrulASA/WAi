@@ -1,0 +1,290 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.head{
+    background-image: url("sv.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+
+.topbar{
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title h1{
+    color: white;
+    font-family: 'Krona One', sans-serif;
+    margin-right: 150px;
+
+   
+}
+
+.menub{
+    display: none;
+    background-color:  rgba(255, 0, 106, 0);
+    border: 0px;
+    font-size: 35px;
+    color: white;
+    
+}
+.title h1:after{
+    font-size: 20px;
+    color: white;
+    margin-left: 5px;
+    font-family: 'Hammersmith One', sans-serif;
+    content:'beta'; 
+   
+}
+.subhead{
+    padding-top:30px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    z-index: 12;
+}
+.subhead h1{
+    font-size: 45px;
+    font-family: 'Candal', sans-serif;
+    color: white;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.315);
+}
+.home{
+    margin-top: 20px;
+    margin-right: 25px;
+    background: rgba(255, 255, 255, 0.904);
+    border: 4px solid white;
+    padding: 3px 10px 0px 10px;
+    border-radius: 4px;
+    font-size: 23px;
+    font-size: 23px;
+    color: rgb(0, 175, 166);
+    font-family: 'Hammersmith One', sans-serif;
+    
+}
+.product{
+    margin-top: 20px;
+    margin-right: 15px;
+    background: rgba(0, 255, 157, 0);
+    border: 4px solid white;
+    padding: 3px 10px 0px 10px;
+    border-radius: 4px;
+    font-size: 23px;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    font-family: 'Hammersmith One', sans-serif;
+}
+.service{
+    margin-top: 20px;
+    margin-right: 15px;
+    background: rgba(0, 255, 157, 0);
+    border: 4px solid white;
+    padding: 3px 10px 0px 10px;
+    border-radius: 4px;
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    font-family: 'Hammersmith One', sans-serif;
+    transition: 0.5s;
+}
+
+.product:hover{
+    margin-top: 20px;
+    margin-right: 25px;
+    background: rgba(255, 255, 255, 0.904);
+    border: 4px solid white;
+    border-radius: 4px;
+    padding: 3px 25px 0px 20px;
+
+    font-size: 23px;
+
+    color: rgb(0, 175, 166);
+    font-family: 'Hammersmith One', sans-serif;
+    transition: 0.5s;
+}
+.service:hover{
+    margin-top: 20px;
+    margin-right: 25px;
+    background: rgba(255, 255, 255, 0.904);
+    border: 4px solid white;
+    border-radius: 4px;
+    padding: 3px 25px 0px 25px;
+   
+    font-size: 23px;
+
+    color: rgb(0, 175, 166);
+    font-family: 'Hammersmith One', sans-serif;
+    transition: 0.5s;
+}
+.nav{
+    margin: 0;
+    padding: 0;
+}
+.navbutton{
+    display: block;
+    margin-bottom:15px ;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    font-size: 23px;
+    color: rgb(0, 199, 189);
+    font-family: 'Hammersmith One', sans-serif;
+}
+.navbuttonx{
+    margin-top: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+ 
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0px 15px 0px 15px;
+    border-radius: 3px;
+    font-size: 53px;
+    color: rgb(0, 199, 189);
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.team{
+    margin-top: 20px;
+    margin-right: 15px;
+    background: rgba(0, 255, 157, 0);
+    border: 4px solid white;
+    border-radius: 4px;
+    padding: 3px 10px 0px 10px;
+  
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    font-family: 'Hammersmith One', sans-serif;
+}
+.team:hover{
+    margin-top: 20px;
+    margin-right: 25px;
+    background: rgba(255, 255, 255, 0.904);
+    border: 4px solid white;
+    border-radius: 4px;
+    padding: 3px 25px 0px 25px;
+
+    font-size: 23px;
+    color: rgb(0, 175, 166);
+    font-family: 'Hammersmith One', sans-serif;
+    transition: 0.5s;
+ 
+}
+.buttons{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.buttons button{
+    margin: 15px;
+   background: rgba(255, 255, 255, 0);
+   border: 3px solid white ;
+   border-radius: 5px;
+   padding: 7px;
+   font-family: 'Hammersmith One', sans-serif;
+   font-size: 18px;
+   transition: .5s;
+   color: rgb(255, 255, 255);
+   -webkit-box-shadow: 2px 6px 25px -17px rgba(0,0,0,0.74);
+   -moz-box-shadow: 2px 6px 25px -17px rgba(0,0,0,0.74);
+   box-shadow: 2px 6px 25px -17px rgba(0,0,0,0.74);
+}
+.buttons button:hover{
+    margin: 15px;
+   background: rgba(0, 0, 0, 0.664);
+   border: 0 ;
+   border-radius: 5px;
+   padding: 10px;
+   font-family: 'Hammersmith One', sans-serif;
+   font-size: 18px;
+   transition: .5s;
+   color: white;
+}
+
+.job{
+    text-align: center;
+  padding: 45px;
+}
+.job h1{
+    text-align: center;
+    color: rgb(0, 179, 134);
+    font-family: 'Patua One', cursive;
+}
+@media only screen and (max-width: 800px){
+    .head{
+        background-image: url("sv2.svg");
+        background-size: 100%;
+    }
+    .subhead{
+        padding-top: 1px;
+        width: 95%;
+    }
+    .subhead h1{
+        font-size: 20px;
+        font-family: 'Candal', sans-serif;
+        color: rgb(255, 255, 255);
+    }
+    .menub{
+        display: inline;
+        background-color:  rgba(255, 0, 106, 0);
+        border: 0px;
+        font-size: 35px;
+        color: white;
+        
+    }
+ 
+    .menu{
+        display: none;
+    }
+    .title h1{
+    color: white;
+    font-family: 'Krona One', sans-serif;
+     margin-top: -45px;
+     margin-left: 110px;
+
+     
+}
+
+.topbar{
+   
+    width: 100%;
+    height: 30px;
+}
+.buttons{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.buttons button{
+    margin: 10px;
+   background: rgba(0, 0, 0, 0.74);
+   border: 0 ;
+   border-radius: 5px;
+   padding: 10px;
+   font-family: 'Hammersmith One', sans-serif;
+   font-size: 15px;
+   transition: .5s;
+   color: white;
+}
+.buttons button:hover{
+    margin: 10px;
+    background: rgba(0, 0, 0, 0.74);
+   border: 0 ;
+   border-radius: 5px;
+   padding: 10px;
+   font-family: 'Hammersmith One', sans-serif;
+   font-size: 15px;
+   transition: .5s;
+   color: white;
+}
+
+
+}
