@@ -1,13 +1,44 @@
+@import "bourbon";
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+@include keyframes(scrollBad) {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -320px;
+  }
+}
+@include keyframes(scrollGood) {
+  0% {
+    transform: translate3d(0,0,0);
+  }
+  100% {
+    transform: translate3d(0,-320px,0);
+  }
+}
 body{
     margin: 0;
     padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(http://scarbroughstudios.com/img/codepen.svg);
+    background-position: center center;
+    background-size: 500px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+    @include animation(scrollBad 5s linear infinite);
+  }
 
-}
+
+
 .head{
     background-image: url("sv.svg");
     background-size: 100%;
     background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
 
 }
 
@@ -211,11 +242,117 @@ body{
 .job{
     text-align: center;
   padding: 45px;
+
 }
-.job h1{
+.jobtitle h1{
     text-align: center;
-    color: rgb(0, 179, 134);
-    font-family: 'Patua One', cursive;
+    color: rgb(80, 80, 80);
+    font-family: 'Secular One', sans-serif;
+    margin: 50px 0px 20px 0px;
+    text-shadow: 2px 2px 5px #ffffff;
+}
+.jobs{
+    display: flex;
+     
+    justify-content:center;
+}
+.cards{
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 20px;
+    -webkit-box-shadow: 0px 0px 7px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 7px -3px rgba(0,0,0,1);
+    box-shadow: 0px 0px 7px -3px rgba(0,0,0,1);
+
+}
+.jobs h1{
+     color: dimgray;
+     font-family: 'Patua One', cursive;
+     font-size: 25px;
+     padding: 10px 0px 15px 0px;
+
+ 
+}
+.jobs h3:nth-child(even){
+    color: dimgray;
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(236, 236, 236);
+    
+}
+
+.jobs h3:nth-child(odd){
+    color: dimgray;
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    
+}
+.jobs h2{
+    color: dimgray;
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.664);
+    margin: 0;
+}
+.jobs a{
+    text-decoration: none;
+}
+.footer{
+    height: 300px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.sticky-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-130px;
+    top:530px;
+    width:210px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    background-color:rgba(255, 255, 255, 0.781);
+    color:#efefef;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+.sticky li:hover{
+    margin-left:-115px;
+}
+.sticky li img{
+    float:left;
+    margin:5px 4px;
+    margin-right:5px;
+}
+.sticky li p{
+    padding-top:5px;
+    margin:0px;
+    line-height:16px;
+    font-size:11px;
+}
+.sticky li p a{
+    text-decoration:none;
+    color:#2C3539;
+}
+.sticky li p a:hover{
+    text-decoration:underline;
 }
 @media only screen and (max-width: 800px){
     .head{
@@ -285,6 +422,81 @@ body{
    transition: .5s;
    color: white;
 }
+.job{
+    text-align: center;
+  padding: 0px;
+}
+.jobs{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+.cards{
+    width: 90%;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    -webkit-box-shadow: -1px -5px 30px -19px rgba(115,115,115,1);
+    -moz-box-shadow: -1px -5px 30px -19px rgba(115,115,115,1);
+    box-shadow: -1px -5px 30px -19px rgba(115,115,115,1);
+}
+.jobtitle h1{
+    text-align: center;
+    color: rgb(100, 100, 100);
+    font-size: 25px;
+    font-family: 'Hammersmith One', sans-serif;
+    margin: 30px 0px 10px 0px;
+    text-shadow: 0px 0px 0px #00000059;
+}
+.job{
+    margin: 25px;
+    text-align: center;
+    background-color: rgba(231, 231, 231, 0.719);
+    -webkit-box-shadow: 0px 0px 7px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 7px -3px rgba(0,0,0,1);
+    box-shadow: 0px 0px 7px -3px rgba(0,0,0,1);
+}
 
 
 }
+
+@media screen and (min-width: 800px) and (max-width:1600px) {
+    .subhead h1{
+        font-size: 35px;
+        font-family: 'Candal', sans-serif;
+        color: rgb(255, 255, 255);
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.315);
+    }
+    .subhead{
+
+        width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 800px) and (max-width:1200px) {
+    .subhead h1{
+        font-size: 35px;
+        font-family: 'Candal', sans-serif;
+        color: rgb(255, 255, 255);
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.315);
+    }
+    .subhead{
+
+        width: 100%;
+    }
+    .buttons button{
+        margin: 15px;
+       background: rgba(255, 255, 255, 0);
+       border: 3px solid rgba(0, 0, 0, 0.685) ;
+       border-radius: 5px;
+       padding: 7px;
+       font-family: 'Hammersmith One', sans-serif;
+       font-size: 18px;
+       transition: .5s;
+       color: rgb(75, 75, 75);
+       -webkit-box-shadow: 2px 6px 25px -17px rgba(0,0,0,0.74);
+       -moz-box-shadow: 2px 6px 25px -17px rgba(0,0,0,0.74);
+       box-shadow: 2px 6px 25px -17px rgba(0,0,0,0.74);
+    }
+  }
